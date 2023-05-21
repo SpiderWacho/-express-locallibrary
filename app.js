@@ -40,7 +40,7 @@ mongoose.set('strictQuery', false);
 // Set up mongoose connection
 const dev_db_url =
   "mongodb+srv://spider:kVunRROTmXqW4vQL@cluster0.hktvh3o.mongodb.net/local_library?retryWrites=true&w=majority";
-const mongoDB = process.env.MONGODB_URI || dev_db_url;
+const mongoDB = process.env.MONGO_URL || dev_db_url;
 
 
 main().catch(err => console.log(err));
